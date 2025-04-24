@@ -13,8 +13,7 @@ import time
 console = Console()
 server_thread = None
 SERVER_URL = "http://127.0.0.1:5000"
-#data = {"username": "admin", 
-       # "password": "181290"}
+
 token = None
 
 def stop_server():
@@ -27,11 +26,6 @@ def stop_server():
 def start_cli():
     boot_animation()
     console.print("[bold green]A.E.G.I.S. ")
-
-   # global server_thread  
-    #server_thread = Thread(target=run_server)
-    #server_thread.start()
-
 
     atexit.register(stop_server)
 
